@@ -7,55 +7,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/styles.css" />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Dog lovers</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="profile.html">Profile</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <body cz-shortcut-listen="true">
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Gratitude</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <form>
-        <h2>New post</h2>
-        <div class="form-group">
-          <label for="inputTitle">Title</label>
-          <input type="text" class="form-control" id="inputTitle" />
-        </div>
-        <div class="form-group">
-          <label for="inputTextarea">Post</label>
-          <textarea class="form-control" id="inputTextarea" rows="5"></textarea>
-        </div>
-      </form>
-    </main>
-    <script src="node_modules/bootstrap/js"
+        </nav>
+      </header>
+      <main>
+        <form>
+          <h2>New post</h2>
+          <div class="form-group">
+            <label for="inputTitle">Title</label>
+            <input type="text" class="form-control" id="inputTitle" />
+          </div>
+          <div class="form-group">
+            <label for="inputTextarea">Post</label>
+            <textarea class="form-control" id="inputTextarea" rows="5"></textarea>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
