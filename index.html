@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Grateful homepage" />
+    <title>Grateful / Homepage</title>
     <link rel="stylesheet" href="dist/css/styles.css" />
   </head>
   <body cz-shortcut-listen="true">
@@ -45,17 +46,52 @@
         </nav>
       </header>
       <main>
-        <form>
-          <h2>New post</h2>
-          <div class="form-group">
+        <form class="my-5">
+          <h2>Today I am grateful for</h2>
+          <div class="form-group mt-3">
             <label for="inputTitle">Title</label>
-            <input type="text" class="form-control" id="inputTitle" />
+            <input type="text" class="form-control mt-2" id="inputTitle" />
           </div>
-          <div class="form-group">
+          <div class="form-group mt-3">
             <label for="inputTextarea">Post</label>
-            <textarea class="form-control" id="inputTextarea" rows="5"></textarea>
+            <textarea class="form-control mt-2" id="inputTextarea" rows="5"></textarea>
           </div>
         </form>
+        <section class="user-feed my-5">
+          <h2>Friends</h2>
+          <div class="row mb-3 text-center">
+            <div class="col-md-4 themed-grid-col">
+              <div class="card">
+                <img src="images/profile-3.jpg" class="card-img-top" alt="profile picture" />
+                <div class="card-body">
+                  <h5 class="card-title">I am grateful for...</h5>
+                  <p class="card-text">Not having to get up to pee during the night. Slept really well.</p>
+                  <a href="#" class="btn btn-primary">View friend</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+              <div class="card">
+                <img src="images/profile-5.jpg" class="card-img-top" alt="profile picture" />
+                <div class="card-body">
+                  <h5 class="card-title">I am grateful for...</h5>
+                  <p class="card-text">Working from home, mainly because of my coffee machine.</p>
+                  <a href="#" class="btn btn-primary">View friend</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+              <div class="card">
+                <img src="images/profile-2.jpg" class="card-img-top" alt="profile picture" />
+                <div class="card-body">
+                  <h5 class="card-title">I am grateful for...</h5>
+                  <p class="card-text">My boyfriend making me breakfast in bed.</p>
+                  <a href="#" class="btn btn-primary">View friend</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
