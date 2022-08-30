@@ -1,0 +1,20 @@
+//Bootstrap variable overrides
+@import "variables.scss";
+
+//Bootstrap styles
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Original styles
+
+@import "./components/header";
+@import "./components/buttons";
+h1,
+h2,
+.navbar-brand {
+  color: $primary;
+}
+
+p,
+label {
+  color: $secondary;
+}
