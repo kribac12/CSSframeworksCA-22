@@ -8,14 +8,13 @@
 
 @import "./components/header";
 @import "./components/buttons";
-
 h1,
 h2,
 .navbar-brand {
-  color: $primary-colour;
+  color: $primary;
 }
 
 p,
 label {
-  color: $secondary-colour;
+  color: $secondary;
 }
