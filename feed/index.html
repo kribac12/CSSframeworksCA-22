@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Grateful sign in page" />
-    <title>Grateful / Sign in</title>
+    <meta name="description" content="Grateful homepage" />
+    <title>Grateful / Homepage</title>
     <link rel="stylesheet" href="dist/css/styles.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -33,13 +33,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="profile.html">Profile</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="login.html">Log in</a>
+                  <a class="nav-link" href="login.html">Log in</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -50,25 +50,57 @@
           </div>
         </nav>
       </header>
-      <main class="form-signin w-75 m-auto text-center">
-        <form>
-          <img class="mb-4" src="images/profile-4-2.jpg" alt="" />
-          <h1 class="h3 mb-3 fw-normal">Please log in</h1>
-
-          <div class="form-floating mb-4">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
-            <label for="floatingInput">Email address</label>
+      <main>
+        <form class="w-75 my-5">
+          <h2>Today I am grateful for</h2>
+          <div class="form-group mt-3">
+            <label for="inputTitle">Title</label>
+            <input type="text" class="form-control mt-2" id="inputTitle" />
           </div>
-          <div class="form-floating mb-4">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
-            <label for="floatingPassword">Password</label>
+          <div class="form-group mt-3">
+            <label for="inputTextarea">Post</label>
+            <textarea class="form-control mt-2" id="inputTextarea" rows="5"></textarea>
           </div>
-          <div class="checkbox mb-3">
-            <label> <input type="checkbox" value="remember-me" /> Remember me </label>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
-          <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+          <button type="button" class="btn btn-primary mt-4">Post to feed</button>
         </form>
+        <section class="user-feed my-5">
+          <h2>Recent posts</h2>
+          <div class="row mb-3 text-center">
+            <div class="col-md-4 themed-grid-col">
+              <div class="card">
+                <img src="images/profile-3.jpg" class="card-img-top" alt="profile picture" />
+                <div class="card-body">
+                  <p>Luna | Tue 30 Aug</p>
+                  <h5 class="card-title">I am grateful for...</h5>
+                  <p class="card-text">Not having to get up to pee during the night. Slept really well.</p>
+                  <a href="#" class="btn btn-outline-primary">View friend</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+              <div class="card">
+                <img src="images/profile-5.jpg" class="card-img-top" alt="profile picture" />
+                <div class="card-body">
+                  <p>Heidi | Tue 30 Aug</p>
+                  <h5 class="card-title">I am grateful for...</h5>
+                  <p class="card-text">My girlfriend making me breakfast in bed.</p>
+                  <a href="#" class="btn btn-outline-primary">View friend</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+              <div class="card">
+                <img src="images/profile-2.jpg" class="card-img-top" alt="profile picture" />
+                <div class="card-body">
+                  <p>Joar | Tue 30 Aug</p>
+                  <h5 class="card-title">I am grateful for...</h5>
+                  <p class="card-text">Working from home, mainly because of my coffee machine.</p>
+                  <a href="#" class="btn btn-outline-primary">View friend</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <div class="container">
         <footer class="py-3 my-4">
